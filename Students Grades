@@ -1,0 +1,21 @@
+#student grades calculation
+Student_name = input("Enter student's name: ")
+Student_id = int(input("Enter student's ID: "))
+Student_mathMarks = int(input("Enter student's math marks: "))
+Student_scienceMarks = int(input("Enter student's science marks: "))
+Student_englishMarks = int(input("Enter student's english marks: "))
+Total_marks = Student_mathMarks + Student_scienceMarks + Student_englishMarks
+print ("The total number of marks added is: ", Total_marks)
+Average_marks = Total_marks / 3
+if Average_marks >= 80:
+    Grade = "A"
+elif Average_marks >= 60:
+    Grade = "B"
+elif Average_marks >= 45:
+    Grade = "C"
+elif Average_marks >= 30:
+    Grade = "D"
+else:
+    Grade = "F"
+print("Average Marks: ", Average_marks)
+print("Grade: ", Grade)
